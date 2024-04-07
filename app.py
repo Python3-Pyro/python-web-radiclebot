@@ -40,4 +40,4 @@ def create_app():
       return render_template("index.html", entries=entries_with_response)
     else:
       return render_template("index.html")
-    return app
+  return app
