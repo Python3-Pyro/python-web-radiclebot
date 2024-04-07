@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  font-family: cursive;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 4px solid black;
+  margin-bottom: 50px;
+}
+
+#bot-name {
+  margin-left: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.form-submit {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+.user-prompt {
+  background-color: rgb(223, 236, 223);
+}
+.bot-response {
+  background-color: rgb(245, 204, 204);
+}
+
+.chat-history {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 20px 20px;
+  justify-content: center;
+  /* height: 300px; */
+  border: 1px solid black;
+  flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+  flex: 1 1 auto; /* flex-grow, flex-shrink, flex-basis */
+  max-width: calc(1200px - 10px); /* Adjust the value as needed */
+  margin: 5px; /* Provides spacing between items */
+  overflow: auto; /* Scrollable content */
+}

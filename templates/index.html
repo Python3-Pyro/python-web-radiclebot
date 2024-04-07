@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <title>My Chatbot</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="static/chatbot.png"
+        alt="image of chatbot"
+        width="50px"
+        height="50px"
+      />
+      <h1 id="bot-name">Radicle Bot</h1>
+    </header>
+    <main class="main">
+      <section class="chat-history">
+        <h1>Chat History</h1>
+        <div>
+          {% for entry in entries %}
+          <article class="entry">
+            <div>
+              <h2 class="user-prompt">Q. {{ entry[0] }}</h2>
+            </div>
+            <h2 class="bot-response">A. {{ entry[1] }}</h2>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <form action="/" method="POST" class="form">
+        <label for="entry" class="label">Enter your prompt here:</label>
+        <textarea
+          name="user_content"
+          id="entry"
+          class="form-textarea"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button class="form-submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
