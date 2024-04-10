@@ -48,15 +48,14 @@ body {
 
 .chat-history {
   display: flex;
-  flex-direction: column;
   box-sizing: border-box;
   margin: 20px 20px;
   justify-content: center;
-  /* height: 300px; */
+  height: 300px;
   border: 1px solid black;
   flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
   flex: 1 1 auto; /* flex-grow, flex-shrink, flex-basis */
   max-width: calc(1200px - 10px); /* Adjust the value as needed */
-  margin: 5px; /* Provides spacing between items */
+  margin: 4px; /* Provides spacing between items */
   overflow: auto; /* Scrollable content */
 }
